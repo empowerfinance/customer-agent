@@ -16,7 +16,7 @@ These commands need `~/empower/empower-android` checked out to branch `customer-
 - `/customer-agent-capture <LINEAR-ID>` — Full pipeline: Linear issue → flag → screens → Paparazzi capture → output package.
 
 ## Key URLs
-- **Pawel's Claude Project**: https://claude.ai/project/019d40c9-7310-77e3-86fc-236d769dfb99
+- **Pawel's Claude Project**: https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d
 - **Fullstory**: https://app.fullstory.com/ui/o-234FQH-na1/ (org: `o-234FQH-na1`)
 - **Amplitude**: Project ID `152808` (Empower production)
 - **Google Drive**: https://drive.google.com/drive/folders/195aWeXklTh1IbSoK-orNKmeXhCSsexgC

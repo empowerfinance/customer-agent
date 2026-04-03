@@ -85,7 +85,7 @@ Just need Chrome + FullStory login (or take manual screenshots). No MCP connecti
 ### Option 1: Just UX evaluation (simplest)
 
 1. Take screenshots of the flow you want to evaluate (from device, emulator, or FullStory)
-2. Open [Pawel's Claude Project](https://claude.ai/project/019d40c9-7310-77e3-86fc-236d769dfb99)
+2. Open [Pawel's Claude Project](https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d)
 3. Drag screenshots into the chat, ask for UX evaluation
 4. Get structured feedback
 
@@ -93,7 +93,7 @@ Just need Chrome + FullStory login (or take manual screenshots). No MCP connecti
 
 This requires a unified Claude Project with all knowledge files, skills, and MCP connections. To set one up:
 
-1. Create a new Claude Project (or clone [Pawel's project](https://claude.ai/project/019d40c9-7310-77e3-86fc-236d769dfb99))
+1. Create a new Claude Project (or clone [Pawel's project](https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d))
 2. Upload all 8 files from `knowledge/`
 3. Install skill files from `skills/` (flag-deep-dive, flag-ux-synthesis)
 4. Enable MCP connections: Amplitude, Figma, Slack, Linear, GitHub

@@ -195,7 +195,7 @@ If the live analysis fails or takes too long during recording:
 
 ## Key URLs for the Demo
 
-- **Claude Project**: https://claude.ai/project/019d40c9-7310-77e3-86fc-236d769dfb99
+- **Claude Project**: https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d
 - **Amplitude — Referral Success Funnel**: https://app.amplitude.com/analytics/empower/chart/3w120rls
 - **Amplitude — New Referral UX Conversion**: https://app.amplitude.com/analytics/empower/chart/yjcgvwwt
 - **Amplitude — Next Gen Referrals Dashboard**: https://app.amplitude.com/analytics/empower/dashboard/wc3wben1

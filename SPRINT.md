@@ -239,7 +239,7 @@ Each account should: use Plaid sandbox institutions (never expire), be excluded 
 
 #### Pipeline Script
 
-A Python script was created at `~/empower/customer-agent/pipeline/customer-agent-pipeline.py` to automate feeding screenshots to Claude for UX evaluation. Requires `ANTHROPIC_API_KEY` (not available on enterprise accounts). Alternative: manually upload screenshots to Pawel's Claude Project ("Product Design Agent (UI & UX)" at `https://claude.ai/project/019d40c9-7310-77e3-86fc-236d769dfb99`).
+A Python script was created at `~/empower/customer-agent/pipeline/customer-agent-pipeline.py` to automate feeding screenshots to Claude for UX evaluation. Requires `ANTHROPIC_API_KEY` (not available on enterprise accounts). Alternative: manually upload screenshots to Pawel's Claude Project ("Product Design Agent (UI & UX)" at `https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d`).
 
 ---
 
@@ -334,7 +334,7 @@ https://drive.google.com/drive/folders/195aWeXklTh1IbSoK-orNKmeXhCSsexgC
 
 1. Open [Fullstory](https://app.fullstory.com/ui/o-234FQH-na1/) — find a session replay
 2. Scrub to key screens, Cmd+Shift+4 to screenshot each one
-3. Open [Pawel's Claude Project](https://claude.ai/project/019d40c9-7310-77e3-86fc-236d769dfb99)
+3. Open [Pawel's Claude Project](https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d)
 4. Drag screenshots into chat + paste evaluation prompt
 5. Get structured UX feedback
 
