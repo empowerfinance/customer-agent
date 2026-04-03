@@ -91,19 +91,20 @@ Just need Chrome + FullStory login (or take manual screenshots). No MCP connecti
 
 ### Option 2: Full analysis (quant + qual + synthesis)
 
-1. Open the unified Claude Project (with skills and MCP connections configured)
-2. Provide a Statsig flag key + screenshots or Figma links
-3. The orchestrator runs Track A (experiment analysis) and Track B (UX evaluation) in parallel
-4. Get a unified synthesis report
+This requires a unified Claude Project with all knowledge files, skills, and MCP connections. To set one up:
 
-### Claude.ai Project Setup (if creating fresh)
-
-1. Create a Claude Project named "Customer Agent"
+1. Create a new Claude Project (or clone [Pawel's project](https://claude.ai/project/019d40c9-7310-77e3-86fc-236d769dfb99))
 2. Upload all 8 files from `knowledge/`
 3. Install skill files from `skills/` (flag-deep-dive, flag-ux-synthesis)
 4. Enable MCP connections: Amplitude, Figma, Slack, Linear, GitHub
-5. System prompt: "You are the Tilt Customer Agent. Follow the workflow in customer-agent-instructions.md."
-6. Ensure Chrome logins for: StatSig, FullStory, GitHub
+5. Set the system prompt: "You are the Tilt Customer Agent. Follow the workflow in customer-agent-instructions.md."
+6. Ensure you're logged into Chrome for: StatSig, FullStory, GitHub
+
+Then to run:
+
+1. Open the project and provide a Statsig flag key + screenshots or Figma links
+2. The orchestrator runs Track A (experiment analysis) and Track B (UX evaluation) in parallel
+3. Get a unified synthesis report
 
 ## Repo Structure
 
