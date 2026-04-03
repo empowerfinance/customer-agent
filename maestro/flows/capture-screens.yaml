@@ -1,0 +1,34 @@
+appId: finance.empower.development
+
+---
+
+# We're on Home screen now - capture it
+- takeScreenshot: /tmp/maestro-screenshots/05-accounts-home
+
+# Scroll down to see more of Home
+- scroll
+- waitForAnimationToEnd
+- takeScreenshot: /tmp/maestro-screenshots/05b-accounts-home-scrolled
+
+# Navigate to Analysis tab
+- tapOn:
+    id: "finance.empower.development:id/navigation_analysis"
+- waitForAnimationToEnd
+- takeScreenshot: /tmp/maestro-screenshots/06-analysis
+
+# Scroll down in Analysis
+- scroll
+- waitForAnimationToEnd
+- takeScreenshot: /tmp/maestro-screenshots/06b-analysis-scrolled
+
+# Navigate to More tab
+- tapOn:
+    id: "finance.empower.development:id/navigation_more"
+- waitForAnimationToEnd
+- takeScreenshot: /tmp/maestro-screenshots/07-more
+
+# Go back to Home
+- tapOn:
+    id: "finance.empower.development:id/navigation_home"
+- waitForAnimationToEnd
+- takeScreenshot: /tmp/maestro-screenshots/08-home-final
