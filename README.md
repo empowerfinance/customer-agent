@@ -60,51 +60,46 @@ We also explored two Android-specific capture methods that could enable fully au
 
 Both require the `empower-android` repo and CLI tooling. More engineering work is needed to make them fully automated and hands-off. See `SPRINT.md` for detailed findings.
 
-## Prerequisites
-
-### For the full end-to-end flow (all in-browser)
-
-| Requirement | Purpose |
-|------------|---------|
-| Claude.ai account (Tilt org) | Host the project, run analysis |
-| Amplitude MCP connected | Experiment data, funnels, session replays |
-| Figma MCP connected | Design screenshots (optional, for design comparison) |
-| Slack MCP connected | Post final reports (optional) |
-| Linear MCP connected | Fetch project context, issues (optional) |
-| GitHub MCP connected | Find PRs associated with experiments (optional) |
-| StatSig login in Chrome | Flag configuration, variant details (Track A) |
-| FullStory login in Chrome | Real user sessions, behavioral patterns (Track A + B) |
-| GitHub login in Chrome | PR details (Track A) |
-
-### For screenshot capture only (minimal setup)
-
-Just need Chrome + FullStory login (or take manual screenshots). No MCP connections needed — upload screenshots directly to Pawel's Claude Project.
-
 ## Quick Start
+
+Open the **[Customer Agent Claude Project](https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d)** in your browser. That's it — all knowledge files, skills, and MCP connections are already configured.
 
 ### Option 1: Just UX evaluation (simplest)
 
-1. Take screenshots of the flow you want to evaluate (from device, emulator, or FullStory)
-2. Open [Pawel's Claude Project](https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d)
+1. Open the [Customer Agent project](https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d)
+2. Take screenshots of the flow you want to evaluate (from device, emulator, or FullStory)
 3. Drag screenshots into the chat, ask for UX evaluation
 4. Get structured feedback
 
 ### Option 2: Full analysis (quant + qual + synthesis)
 
-This requires a unified Claude Project with all knowledge files, skills, and MCP connections. To set one up:
+1. Open the [Customer Agent project](https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d)
+2. Provide a Statsig flag key + screenshots or Figma links
+3. The orchestrator runs Track A (experiment analysis) and Track B (UX evaluation) in parallel
+4. Get a unified synthesis report
 
-1. Create a new Claude Project (or clone [Pawel's project](https://claude.ai/project/019d547f-2434-775a-b9fc-20bb0dfbef6d))
+### Prerequisites
+
+The Claude Project is pre-configured, but you'll need browser logins for services that Track A accesses via Chrome:
+
+| Requirement | Purpose |
+|------------|---------|
+| Claude.ai account (Tilt org) | Access the project |
+| StatSig login in Chrome | Flag configuration, variant details |
+| FullStory login in Chrome | Real user sessions, behavioral patterns |
+| GitHub login in Chrome | PR details associated with experiments |
+
+MCP connections (Amplitude, Figma, GitHub, Linear, Slack, Notion) are already enabled on the project.
+
+### Setting up your own Claude Project (optional)
+
+If you want to create a separate project instead of using the shared one:
+
+1. Create a new Claude Project on claude.ai
 2. Upload all 8 files from `knowledge/`
-3. Install skill files from `skills/` (flag-deep-dive, flag-ux-synthesis)
+3. Install skill files from `skills/` via Customize → Skills (flag-deep-dive, flag-ux-synthesis)
 4. Enable MCP connections: Amplitude, Figma, Slack, Linear, GitHub
 5. Set the system prompt: "You are the Tilt Customer Agent. Follow the workflow in customer-agent-instructions.md."
-6. Ensure you're logged into Chrome for: StatSig, FullStory, GitHub
-
-Then to run:
-
-1. Open the project and provide a Statsig flag key + screenshots or Figma links
-2. The orchestrator runs Track A (experiment analysis) and Track B (UX evaluation) in parallel
-3. Get a unified synthesis report
 
 ## Repo Structure
 
